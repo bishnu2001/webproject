@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100;0,8..30,300;1,8..30,200&family=Poppins:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+body{
+    background-image: url('../images/img2.jpg');
+}
+img{
+    clip-path: polygon(56% 0, 0% 100%, 100% 100%);
+
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6
+}
+/* html{
+    font-size: 62.5%;
+} */
+.main_menu{
+    background-color:var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color: blue;
+}
+.navbar-toggler-icon{
+    background-color:grey;
+}
+a button:hover{
+    background-color: aqua;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: blue;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.main_header_left{
+    display: flex;
+    flex-direction: column;
+}
+.main_header_right{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:768px) {
+.main_header_left{
+    height: auto;
+    margin: 5rem 0;
+}
+.main_header_left{
+    height: auto;
+    margin-top: 3rem;
+
+}
+
+
+    
+}
